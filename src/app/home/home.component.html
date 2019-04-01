@@ -1,0 +1,22 @@
+<div class="selector">
+	<span (click)="selector=1">トップ</span>
+	<span (click)="selector=2">問題</span>
+	<span (click)="selector=3">提出</span>
+	<span (click)="selector=4">順位表</span>
+</div>
+
+<div *ngIf="selector==1">
+	<app-top></app-top>
+</div>
+
+<div *ngIf="selector==2">
+	<app-problem></app-problem>
+</div>
+
+<div *ngIf="selector==3">
+	<app-submit></app-submit>
+</div>
+
+<div *ngIf="selector==4">
+	<app-rank></app-rank>
+</div>
