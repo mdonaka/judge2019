@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProblemComponent implements OnInit {
 
+	private problem:number = 0;
+
   constructor() { }
 
   ngOnInit() {
